@@ -29,7 +29,7 @@ header{
 .image-container{
     width: 200px;
 }
-img{
+.image-container img{
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
@@ -51,7 +51,15 @@ img{
 .skillset h1{
     text-align: center;
 }
+.django{
+    width: 17px;
+    display: inline;
+}
 .cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.card-img img{
+    width: 100%;
 }
