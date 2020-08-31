@@ -12,11 +12,11 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #DAE1EC;
+    background: black;
 }
 .container{
     width: 100%;
-    max-width: 720px;
+    max-width: 1920px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
@@ -60,6 +60,11 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 }
-.card-img img{
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.grid-img img{
     width: 100%;
 }
