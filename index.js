@@ -1,31 +1,21 @@
-const display = document.querySelector(".display")
-const simiSlider = document.querySelector(".simi-slider")
+const slider = document.querySelectorAll(".grid-img")
 
-const simiImage = simiSlider.querySelectorAll(":scope > img")
-
-const simi = document.querySelector(".simi")
-simi.addEventListener('click', showImg)
-
-for (var i = 0; i < simiImage.length; i++) {
-	simiImage[i].style.display="none"
-}
-
-function showImg(e) {
-	let i = 0
-	simiSlider.style.display = "block"
-	display.src = simiImage[i].src;
-	display.addEventListener('click', changeImg(i))
-}
-function changeImg() {
-	let current = i
-	let total = simiImage.length - 1
-	console.log(total)
-	if (current < total) {
-		console.log(i)
-		i++
-	} else {
-		console.log(i)
-		i = 0
+for (var i = 0; i < slider.length; i++) {
+	const display = slider[i].querySelector(":scope > .display")
+	let image = slider[i].querySelectorAll(":scope > img")
+	for (var i = 1; i < image.length; i++) {
+		image[i].style.display="none"
 	}
-	display.src = simiImage[i].src;
+	let a = 1
+	display.src = image[1].src
+	display.addEventListener('click', function function_name(argument) {
+		let total = image.length - 1
+		if (a < total) {
+			a++
+		} else if (i = total) {
+			a = 1
+		}
+		console.log(a)
+		display.src = image[a].src
+	})
 }
