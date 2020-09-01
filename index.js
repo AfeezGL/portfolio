@@ -1,8 +1,8 @@
 const slider = document.querySelectorAll(".grid-img")
 
-for (var i = 0; i < slider.length; i++) {
-	const display = slider[i].querySelector(":scope > .display")
-	let image = slider[i].querySelectorAll(":scope > img")
+slider.forEach(function(item){
+	const display = item.querySelector(":scope > .display")
+	let image = item.querySelectorAll(":scope > img")
 	for (var i = 1; i < image.length; i++) {
 		image[i].style.display="none"
 	}
@@ -18,4 +18,4 @@ for (var i = 0; i < slider.length; i++) {
 		console.log(a)
 		display.src = image[a].src
 	})
-}
+})
