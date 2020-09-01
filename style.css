@@ -5,6 +5,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    color: #dadada;
+}
+p {
+    font-size: 18px;
 }
 body{
     display: flex;
@@ -22,6 +26,7 @@ body{
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     margin-bottom: 10px;
     padding: 10px;
+    background-color: black;
 }
 header{
     display: flex;
@@ -46,7 +51,13 @@ header{
     cursor: pointer;
     border-radius: 2px;
     text-align: center;
-
+    color: black;
+}
+.projects-btn {
+    background: #f80332;
+}
+.contact-btn {
+    background: #09f755;
 }
 .skillset h1{
     text-align: center;
@@ -57,13 +68,31 @@ header{
 }
 .cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+.grid-img, .grid-body {
+    padding: 2rem 1rem;
+}
+.grid-img {
+    border-radius: 5px;
+}
+.grid:nth-child(odd) .grid-img {
+    background-color: #f80332;
+}
+.grid:nth-child(even) .grid-body {
+    grid-column: 1;
+    grid-row: 1;
+}
+.grid:nth-child(even) .grid-img {
+    background-color: #09f755;
+    grid-column: 2;
 }
 .grid-img img{
     width: 100%;
