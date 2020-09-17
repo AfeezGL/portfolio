@@ -10,36 +10,49 @@
     <title>Afeez G Lawal</title>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <header>
             <div class="image-container">
                 <img src="gbolahan.jpg" alt="image">
             </div>
             <div class="info">
-                <h1>Hi i'm Afeez Gbolahan Lawal</h1>
-                <small>Fullstack Web Developer</small>
-                <div class="buttons">
-                    <a href="#skillset" class="btn skillset-btn">Skillset</a>
-                    <a href="#projects" class="btn projects-btn">Projects</a>
-                    <a href="#contact" class="btn contact-btn">Hire me</a>
-                </div>
+                <h1>Hi,</h1>
+                <h1>I'm Afeez G. Lawal</h1>
+                <p>A Fullstack Web Developer</p>
             </div>
         </header>
     </div>
     <div class="container skillset" id="skillset">
-        <h1>skillset</h1>
-        <p>These are the technologies I use</p>
-        <div class="cards">
-            <h4><i class="fab fa-html5"></i>html</h4>
-            <h4><i class="fab fa-css3-alt"></i>css</h4>
-            <h4><i class="fab fa-js-square"></i>javascript</h4>
-            <h4><i class="fab fa-python"></i>python</h4>
-            <h4><img class="django" src="django.png" alt="">django</h4>
-            <h4><i class="fab fa-bootstrap"></i>bootstrap</h4>
+        <h1 class="heading">Skillset</h1>
+        <div class="skills">
+            <div class="skill">
+                <i class="fab fa-html5 html"></i>
+                <h4>html5</h4>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt css"></i>
+                <h4>css3</h4>
+            </div>
+            <div class="skill">
+                <img src="images/logo-javascript.svg" alt="Javascript icon">
+                <h4>javascript</h4>
+            </div>
+            <div class="skill">
+                <img src="images/python-5.svg" alt="Python icon">
+                <h4>python</h4>
+            </div>
+            <div class="skill">
+                <img src="images/django.svg" alt="Django logo">
+                <h4>django</h4>
+            </div>
+            <div class="skill">
+                <img src="images/bootstrap-4.svg" alt="Bootstrap icon">
+                <h4>bootstrap</h4>
+            </div>
         </div>
     </div>
     <div class="container projects" id="projects">
-        <h4>live projects</h4>
+        <h2 class="heading">Live projects</h2>
         <div class="grids">
             <div class="grid project simi">
                 <div class="grid-img">
@@ -50,10 +63,12 @@
                     <img src="images/simicontact.png" alt="">
                 </div>
                 <div class="grid-body">
-                    <h3>Simi</h3>
-                    <p>A rice production company based in Nigeria</p>
-                    <h4 class="stack">Stack: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i></h4>
-                    <a href="http://simi-redesign.netlify.app" class="btn">view site</a>
+                    <div class="site-info">
+                        <h3>Simi</h3>
+                        <p>A rice production company based in Nigeria</p>
+                    </div>
+                    <div class="stack"><i class="fab fa-html5 html"></i> <i class="fab fa-css3-alt css"></i></div>
+                    <a href="http://simi-redesign.netlify.app" class="btn site-link">View site</a>
                 </div>
             </div>
             <div class="grid project">
@@ -62,29 +77,37 @@
                     <img src="images/hello-fetch.png">
                 </div>
                 <div class="grid-body">
-                    <h4>Github API Search</h4>
-                    <p>Just a fun little one page website that searches github for a given username and returns a little thing about the user using Fetch API</p>
-                    <h4 class="stack">Stack: <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js-square"></i> <i class="fab fa-bootstrap"></i></h4>
+                    <div class="site-info">
+                        <h4>Github API Search</h4>
+                        <p>Just a fun little one page website that searches github for a given username and returns a little thing about the user using Fetch API</p>
+                    </div>
+                    <div class="stack"><i class="fab fa-html5 html"></i> <i class="fab fa-css3-alt css"></i> <img src="images/logo-javascript.svg" alt="Javascript icon" class="img-icon"> <i class="fab fa-bootstrap bootstrap"></i></div>
+                    <a href="https://afeezgl.github.io/hello-fetch" class="btn site-link">View site</a>
+                </div>
+            </div>
+            <div class="grid project">
+                <div class="grid-img">
+                    <img alt="Project screenshot" class="display">
+                    <img src="images/djecomm1.png">
+                    <img src="images/djecomm2.png">
+                </div>
+                <div class="grid-body">
+                    <div class="site-info">
+                        <h4>Fabric Shop</h4>
+                        <p>A one stop shop clothing materials for stylists and fashion designers, that also sells ready to wear (ready made) clothes for intersted customers</p>
+                    </div>
+                    <div class="stack"><img src="images/python-5.svg" alt="Python icon" class="img-icon"> <img src="images/django.svg" alt="Django logo" class="img-icon"> <i class="fab fa-html5 html"></i> <i class="fab fa-css3-alt css"></i> <img src="images/logo-javascript.svg" alt="Javascript icon" class="img-icon"> <i class="fab fa-bootstrap bootstrap"></i></div>
+                    <a href="https://prj-django-ecomm.herokuapp.com/" class="btn site-link">View site</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="container contact" id="contact">
-        <h3>contact me</h3>
-        <div class="platforms">
-            <div class="platform">
-                <a href="twitter.com/AfeezGL"><i class="fab fa-twitter"></i>Twitter</a>
-            </div>
-            <div class="platform">
-                <a href="instagram.com/afeezgl"><i class="fab fa-instagram"></i>Instagram</a>
-            </div>
-            <div class="platform">
-                <a href="github.com/AfeezGL"><i class="fab fa-github"></i>Github</a>
-            </div>
-            <div class="platform">
-                <a href="#"><i class="fas fa-envelope"></i>Email</a>
-            </div>
-        </div>
+        <h2>Contact me:</h2>
+        <a href="mailto: afeezlg@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+        <a href="https://twitter.com/AfeezGL"><i class="fab fa-twitter"></i>Twitter</a>
+        <a href="htps://instagram.com/afeezgl"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://github.com/AfeezGL"><i class="fab fa-github"></i>Github</a>
     </div>
     <script src="index.js"></script>
 </body>
