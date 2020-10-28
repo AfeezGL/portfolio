@@ -32,7 +32,6 @@ body{
     background-image: url('images/background.jpg');
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -55,12 +54,15 @@ body{
 .info{
     padding: 20px;
 }
-.info h1, .info p {
-    color: violet;
+.info h1 {
+    color: #09f755;
 }
 .info p {
+    color: #00ff51;
     font-weight: 400;
     font-size: 1.5rem;
+    max-width: 500px;
+    text-align: justify;
 }
 .btn{
     background: #f3f4f5;
