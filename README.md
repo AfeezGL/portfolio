@@ -8,4 +8,4 @@ A one stop shop for stylists and fashion designers to buy clothing materials. Re
 
 ### Deployment
 - Hosting - Netlify
-- Url - [afeez](https://afeezgl.netlify.com)
+- Url - [afeezgl](https://afeezgl.netlify.com)
